@@ -3,6 +3,7 @@
 section .text
 global main
 main:
+    mov rbp, rsp; for correct debugging
     ;write your code here
     
     ; 10진수 0 1 2 ...
@@ -17,6 +18,18 @@ main:
     
     ; 0b10010101 = 0b 1001 0101 = 0x 9 5 = 0x95
     
+    ; 32bit = 4byte = 2word = 1dword(double word)
+    ; 64bit = 8byte = 4word = 2dword = 1qword(quad word)
+    
+    ; mov 레지스터, 값 (오른쪽에서 왼쪽으로 명령 수행)
+    ; mov 레지스터, 레지스터
+    
+    mov eax, 0x1234
+    mov rbx, 0x12345678
+    mov cl,0xff
+    
+    mov al, 0x00
+    mov rax, rdx
     
     PRINT_STRING msg
     
