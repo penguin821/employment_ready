@@ -4,6 +4,9 @@ section .text
 global main
 main:
     mov rbp, rsp; for correct debugging
+    ;msg db 'hello world', 0x00
+    ;PRINT_STRING msg
+    mov rbp, rsp; for correct debugging
     ;write your code here
     
     ; 10진수 0 1 2 ...
@@ -29,12 +32,50 @@ main:
     mov cl,0xff
     
     mov al, 0x00
-    mov rax, rdx
+    ;mov rax, rdx
     
-    PRINT_STRING msg
+    ; 메모리 <-> 레지스
     
+    ;mov rax, a ; a의 주소값을 rax에 복사   
+    ;mov rax, [a] ; a의 값을 복사 (그러나 a 뒤의 값까지 다 가져옴)
+    mov al, [a]
+    mov [a], byte 0x55
+    mov [a], word 0x6666
+    mov [a], cl
+           
     xor rax, rax
     ret
     
+    ; 변수의 선언 및 사용
+    ; 변수는 그냥 데이터를 저장하는 바구니
+    ; 처음에 바구니 사용하겠다 선언
+    
+    ; 메모리에는 구분할 수 있는 주소값이 있음
+
+    ; 초기화 된 데이터
+    ; 변수이름, 크기, 초기값
+    ; db=1,dw=2,dd=4,dq=8
+    
 section .data
-    msg db 'hello world', 0x00
+    a db 0x11
+    b dw 0x2222
+    c dd 0x33333333
+    d dq 0x4444444444444444
+
+    ; 초기화 되지 않은 데이터
+    ; 변수이름, 크기, 개수
+    ; res(리저브)b=1,resw=2,resd=4,resq=8
+    
+    
+    
+section .bss
+    e resb 10
+    
+    
+    
+    
+    
+    
+    
+    
+  
