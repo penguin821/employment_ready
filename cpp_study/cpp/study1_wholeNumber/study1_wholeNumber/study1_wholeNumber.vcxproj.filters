@@ -13,13 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\00. Study">
+      <UniqueIdentifier>{85834b3d-c7cb-4e0c-ae4b-24cf9e7d1fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Main">
+      <UniqueIdentifier>{18c6d16a-f69c-4406-a2cd-bc0c024d20b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Class">
+      <UniqueIdentifier>{5f6a1329-1778-4545-82ce-8d25a5eb9b3e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="wholeNumber.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="bitflag_bitmask.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
+    <ClCompile Include="operator_override.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
+    <ClCompile Include="wholeNumber.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\01. Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일\02. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\02. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Position.cpp">
+      <Filter>소스 파일\02. Class</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Object.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Position.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
