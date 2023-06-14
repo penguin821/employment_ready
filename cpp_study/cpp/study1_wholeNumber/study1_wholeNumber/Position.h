@@ -2,6 +2,7 @@
 
 class c_Position
 {
+public:
 	c_Position() {};
 	~c_Position() {};
 public:
