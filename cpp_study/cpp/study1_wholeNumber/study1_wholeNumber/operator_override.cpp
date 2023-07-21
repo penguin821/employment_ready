@@ -7,17 +7,17 @@ int main()
 {
 	c_Player cPlayer1(1, 1), cPlayer2(2, 2);
 
-	cout << "ÇÃ·¹ÀÌ¾î 1 À§Ä¡ : " << cPlayer1.m_pos.m_x << " , " << cPlayer1.m_pos.m_y << endl;
-	cout << "ÇÃ·¹ÀÌ¾î 2 À§Ä¡ : " << cPlayer2.m_pos.m_x << " , " << cPlayer2.m_pos.m_y << endl;
+	cout << "ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ 1 ï¿½ï¿½Ä¡ : " << cPlayer1.m_pos.m_x << " , " << cPlayer1.m_pos.m_y << endl;
+	cout << "ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ 2 ï¿½ï¿½Ä¡ : " << cPlayer2.m_pos.m_x << " , " << cPlayer2.m_pos.m_y << endl;
 
 	c_Position pos;
 	pos = cPlayer1.m_pos + cPlayer1.m_pos;
-	cout << "ÀÌÈÄ À§Ä¡ : " << pos.m_x << " , " << pos.m_y << endl;
+	cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ : " << pos.m_x << " , " << pos.m_y << endl;
 	//pos = pos + 5;
-	cout << "ÀÌÈÄ À§Ä¡ : " << pos.m_x << " , " << pos.m_y << endl;
+	cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ : " << pos.m_x << " , " << pos.m_y << endl;
 	//pos = 2 + pos;
-	cout << "ÀÌÈÄ À§Ä¡ : " << pos.m_x << " , " << pos.m_y << endl;
+	cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ : " << pos.m_x << " , " << pos.m_y << endl;
 
 	bool isSame = (pos == cPlayer2.m_pos);
-	cout << "°ª ÀÏÄ¡? : " << isSame << endl;
+	cout << "ï¿½ï¿½ ï¿½ï¿½Ä¡? : " << isSame << endl;
 }

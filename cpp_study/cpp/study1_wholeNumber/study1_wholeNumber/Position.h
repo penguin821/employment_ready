@@ -4,13 +4,13 @@ class c_Position
 {
 public:
 	c_Position();
-	// c_Position(const c_Position& arg); º¹»ç »ý¼ºÀÚ
+	// c_Position(const c_Position& arg); ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	~c_Position();
 public:
 	c_Position operator+(const c_Position& pos);
 	c_Position operator+(int pos);
 	c_Position& operator=(int pos);
-	// c_Position& operator=(const c_Position& pos); º¹»ç ´ëÀÔ ¿¬»êÀÚ
+	// c_Position& operator=(const c_Position& pos); ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	bool operator==(const c_Position& pos);
 public:
 	int m_x = 0;
