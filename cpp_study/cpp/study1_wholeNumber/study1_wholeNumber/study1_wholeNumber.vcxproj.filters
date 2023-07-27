@@ -45,7 +45,7 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\01. Main</Filter>
     </ClCompile>
-    <ClCompile Include="type_casting.cpp">
+    <ClCompile Include="type_change.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
     <ClCompile Include="Knight.cpp">
@@ -62,6 +62,9 @@
     </ClCompile>
     <ClCompile Include="Pet.cpp">
       <Filter>소스 파일\02. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="type_casting.cpp">
+      <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

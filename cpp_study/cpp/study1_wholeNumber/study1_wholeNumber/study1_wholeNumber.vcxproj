@@ -144,8 +144,11 @@
     <ClCompile Include="Pet.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Position.cpp" />
-    <ClCompile Include="typecast_pointer.cpp" />
-    <ClCompile Include="type_casting.cpp">
+    <ClCompile Include="typecast_pointer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="type_casting.cpp" />
+    <ClCompile Include="type_change.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="wholeNumber.cpp">

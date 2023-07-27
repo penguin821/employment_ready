@@ -6,7 +6,7 @@ class Object
 public:
 	Object();
 	Object(int x, int y);
-	~Object();
+	virtual ~Object();
 public:
 	Position m_pos;
 };
