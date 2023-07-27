@@ -1,10 +1,13 @@
 #pragma once
 #include "Object.h"
+#include "Pet.h"
 
-class c_Player : public c_Object
+class Player : public Object
 {
 public:
-	c_Player();
-	c_Player(int x, int y) : c_Object(x, y) {};
-	~c_Player();
+	Player();
+	Player(int x, int y) : Object(x, y) {};
+	~Player();
+public:
+	Pet* m_pet = nullptr;
 };

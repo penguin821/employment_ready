@@ -1,0 +1,1 @@
+typecast pointer cpp 참고

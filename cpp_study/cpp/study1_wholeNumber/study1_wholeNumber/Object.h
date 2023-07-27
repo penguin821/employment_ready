@@ -1,12 +1,12 @@
 #pragma once
 #include "Position.h"
 
-class c_Object
+class Object
 {
 public:
-	c_Object();
-	c_Object(int x, int y);
-	~c_Object();
+	Object();
+	Object(int x, int y);
+	~Object();
 public:
-	c_Position m_pos;
+	Position m_pos;
 };

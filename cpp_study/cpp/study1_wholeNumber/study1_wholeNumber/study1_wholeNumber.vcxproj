@@ -141,9 +141,13 @@
     <ClCompile Include="operator_override.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Pet.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Position.cpp" />
-    <ClCompile Include="type_casting.cpp" />
+    <ClCompile Include="typecast_pointer.cpp" />
+    <ClCompile Include="type_casting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="wholeNumber.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -151,8 +155,10 @@
   <ItemGroup>
     <ClInclude Include="BullDog.h" />
     <ClInclude Include="Dog.h" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="Knight.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="Pet.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Position.h" />
     <ClInclude Include="Struct.h" />

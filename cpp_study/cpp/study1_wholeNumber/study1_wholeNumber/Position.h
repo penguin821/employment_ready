@@ -1,17 +1,17 @@
 #pragma once
 
-class c_Position
+class Position
 {
 public:
-	c_Position();
-	// c_Position(const c_Position& arg); ���� ������
-	~c_Position();
+	Position();
+	// Position(const Position& arg); ���� ������
+	~Position();
 public:
-	c_Position operator+(const c_Position& pos);
-	c_Position operator+(int pos);
-	c_Position& operator=(int pos);
-	// c_Position& operator=(const c_Position& pos); ���� ���� ������
-	bool operator==(const c_Position& pos);
+	Position operator+(const Position& pos);
+	Position operator+(int pos);
+	Position& operator=(int pos);
+	// Position& operator=(const Position& pos); ���� ���� ������
+	bool operator==(const Position& pos);
 public:
 	int m_x = 0;
 	int m_y = 0;

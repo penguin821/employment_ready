@@ -1,9 +1,9 @@
 #pragma once
 #include "Position.h"
 
-c_Position operator+(int num, const c_Position pos)
+Position operator+(int num, const Position pos)
 {
-	c_Position ret;
+	Position ret;
 
 	ret.m_x = num + pos.m_x;
 	ret.m_y = num + pos.m_y;

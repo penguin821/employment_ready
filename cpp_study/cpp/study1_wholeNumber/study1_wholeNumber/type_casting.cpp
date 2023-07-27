@@ -1,6 +1,5 @@
 #include <iostream>
-#include "Dog.h"
-#include "Knight.h"
+#include "Header.h"
 using namespace std;
 
 int main()
@@ -29,6 +28,7 @@ int main()
 //	2. 불안전한 변환
 //	의미가 항상 100퍼 같다고 보장 못함
 //	타입이 다르거나 같은 타입이지만 큰바구니->작은바구니로 담을때(다운캐스팅)
+//  데이터 분실 우려
 	int a = 1234567;
 	float b = a;
 	short c = b;
@@ -62,5 +62,23 @@ int main()
 	// 얘는 주소값을 대상으로 해서 명시적으론 조치가 필요없음
 
 //	<상속 관계의 클래스 사이의 변환>
+// 1. 상속 관계 클래스의 값 타입 변환
+	{
+		//Dog d;
+		//BullDog c = (BullDog)d; // 안됨
 
+		BullDog a;
+		Dog b = a;
+	}
+// 2. 상속 관계 클래스의 참조 타입 변환
+	{
+		Dog d;
+		BullDog& c = (BullDog&)d; // 얘도 명시적만 가능
+
+		BullDog a;
+		Dog& b = a;
+		// 불독 고유 정보가 짤려나가도 Dog이 가져야할 공통 부분은
+		// 유지 되니깐
+	}
+// 결론은 자식 -> 부모는 암시적 다 가능, 부모 -> 자식은 명시도 필요
 }

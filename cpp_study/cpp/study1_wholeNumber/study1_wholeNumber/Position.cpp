@@ -1,18 +1,18 @@
 #include "Position.h"
 
-c_Position::c_Position()
+Position::Position()
 {
 
 }
 
-c_Position::~c_Position()
+Position::~Position()
 {
 
 }
 
-c_Position c_Position::operator+(const c_Position& back_pos)
+Position Position::operator+(const Position& back_pos)
 {
-	c_Position pos;
+	Position pos;
 
 	pos.m_x = m_x + back_pos.m_x;
 	pos.m_y = m_y + back_pos.m_y;
@@ -20,9 +20,9 @@ c_Position c_Position::operator+(const c_Position& back_pos)
 	return pos;
 }
 
-c_Position c_Position::operator+(int num)
+Position Position::operator+(int num)
 {
-	c_Position pos;
+	Position pos;
 
 	pos.m_x = m_x + num;
 	pos.m_y = m_y + num;
@@ -30,7 +30,7 @@ c_Position c_Position::operator+(int num)
 	return pos;
 }
 
-bool c_Position::operator==(const c_Position& back_pos)
+bool Position::operator==(const Position& back_pos)
 {
 	if ((m_x == back_pos.m_x) && (m_y == back_pos.m_y))
 		return true;
@@ -38,10 +38,10 @@ bool c_Position::operator==(const c_Position& back_pos)
 		return false;
 }
 
-c_Position& c_Position::operator=(int num)
+Position& Position::operator=(int num)
 {
 	m_x = num;
 	m_y = num;
-	// this = ³ª¸¦ °¡¸£Å°´Â Æ÷ÀÎÅÍ, ³» ÀÚ½ÅÀÇ ÁÖ¼Ò
+	// this = ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½
 	return *this;
 }
