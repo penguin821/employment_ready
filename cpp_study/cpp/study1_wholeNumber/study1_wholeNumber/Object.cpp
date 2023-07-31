@@ -15,3 +15,23 @@ Object::~Object()
 {
 
 }
+
+void Object::SetHp(int* copy)
+{
+	m_hp = *copy;
+}
+
+int Object::GetHp()
+{
+	return m_hp;
+}
+
+void Object::SetMp(int* copy)
+{
+	m_mp = *copy;
+}
+
+int Object::GetMp()
+{
+	return m_mp;
+}

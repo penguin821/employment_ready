@@ -9,5 +9,6 @@ public:
 	Player(int x, int y) : Object(x, y) {};
 	~Player();
 public:
+
 	Pet* m_pet = nullptr;
 };

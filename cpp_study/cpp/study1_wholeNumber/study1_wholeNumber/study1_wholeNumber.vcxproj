@@ -133,6 +133,7 @@
     </ClCompile>
     <ClCompile Include="BullDog.cpp" />
     <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="Knight.cpp" />
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -144,10 +145,13 @@
     <ClCompile Include="Pet.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Position.cpp" />
+    <ClCompile Include="struct_pointer.cpp" />
     <ClCompile Include="typecast_pointer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="type_casting.cpp" />
+    <ClCompile Include="type_casting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="type_change.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -159,6 +163,7 @@
     <ClInclude Include="BullDog.h" />
     <ClInclude Include="Dog.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="Knight.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Pet.h" />
