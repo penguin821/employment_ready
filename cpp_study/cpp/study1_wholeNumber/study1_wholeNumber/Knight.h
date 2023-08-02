@@ -13,6 +13,7 @@ public:
 	~Knight();
 public:
 	Knight& operator=(const Knight& copy);
+	void operator()();
 public:
 	
 };

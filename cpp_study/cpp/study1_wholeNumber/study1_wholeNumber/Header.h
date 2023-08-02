@@ -7,3 +7,4 @@
 #include "Position.h"
 #include "Struct.h"
 #include "Item.h"
+#include "Gacha.h"

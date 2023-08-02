@@ -132,7 +132,12 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="BullDog.cpp" />
+    <ClCompile Include="callback.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="functor_template.cpp" />
+    <ClCompile Include="Gacha.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Knight.cpp" />
     <ClCompile Include="main.cpp">
@@ -145,7 +150,9 @@
     <ClCompile Include="Pet.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Position.cpp" />
-    <ClCompile Include="struct_pointer.cpp" />
+    <ClCompile Include="struct_pointer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="typecast_pointer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -162,6 +169,7 @@
   <ItemGroup>
     <ClInclude Include="BullDog.h" />
     <ClInclude Include="Dog.h" />
+    <ClInclude Include="Gacha.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Knight.h" />

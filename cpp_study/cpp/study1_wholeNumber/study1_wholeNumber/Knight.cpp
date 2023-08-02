@@ -22,3 +22,8 @@ Knight& Knight::operator=(const Knight& copy)
 	m_pet = new Pet(*copy.m_pet);
 	return *this;
 }
+
+void Knight::operator()()
+{
+
+}
