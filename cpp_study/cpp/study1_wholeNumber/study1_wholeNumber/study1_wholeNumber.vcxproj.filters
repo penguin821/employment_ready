@@ -84,6 +84,15 @@
     <ClCompile Include="vector_iter.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
+    <ClCompile Include="cusrtom_vector.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
+    <ClCompile Include="CVector.cpp">
+      <Filter>소스 파일\02. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="list.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Object.h">
@@ -117,6 +126,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Gacha.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CVector.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
