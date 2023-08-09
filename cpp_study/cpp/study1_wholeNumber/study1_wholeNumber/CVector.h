@@ -1,15 +1,27 @@
 #pragma once
+#include <iostream>
+
+template <typename T>
 class CVector
 {
 public:
 	CVector();
+	CVector(int size);
+	CVector(int size, T data);
 	~CVector();
 public:
 	int size();
+	void resize(int size);
 	int capacity();
-
-
+	void clear();
+	void reserve(int size);
+	void push_back(T data);
+	T operator()(int num);
+	ostream operator<<(ostream& os, )
 private:
+	int m_size;
+	int m_capacity;
+	T m_data[m_size];
 };
 
 /*

@@ -24,8 +24,8 @@ capacity()				여유분을 포함한 용량 갯수 (1.5배씩 증가함)
 clear()					size를 0으로 만들어줌, capacity는 그대로
 reserve(용량)				capacity 미리 설정 가능 (capacity만 셋팅됨) (이미 설정된 capacity 이상의 값을 설정했을때만 작동)
 resize(용량)				size를 미리 설정 가능 (size랑 capacity 둘다 셋팅됨)
-vector<자료형> 변수명(용량)  	으로 초기화 가능, 용량은 resize랑 똑같이 작동, (용량, 초기값) 으로 전체 초기화도 가능
-
+vector<자료형> 변수명(용량)  	으로 초기화 가능(전부 0이 들어감), 용량은 resize랑 똑같이 작동, (용량, 초기값) 으로 전체 초기화도 가능
+vector<자료형> 변수명(용량, 초기화값)
 insert(변수명.begin()+이동할칸, 값) / iterator 사용시 삽입한곳 가리킴
 erase(변수명.begin()+이동할칸 / iterator 사용시 지운곳 가리킴
 erase(변수명.begin()+이동할칸(이상), 변수명.begin()+이동할칸(미만)) 이상 미만 범위로 삭제됨 / 지운곳 가리킴
