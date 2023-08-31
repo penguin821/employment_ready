@@ -100,7 +100,7 @@ int main()
 
 }
 
-ostream& operator<<(ostream& os, const Knight& copy)
+ostream& operator <<(ostream& os, const Knight& copy)
 {
 	os << copy.m_hp;
 	return os;

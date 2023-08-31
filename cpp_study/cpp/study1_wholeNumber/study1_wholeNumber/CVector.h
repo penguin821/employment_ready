@@ -1,27 +1,70 @@
 #pragma once
 #include <iostream>
+using namespace std;
 
 template <typename T>
 class CVector
 {
 public:
 	CVector();
-	CVector(int size);
-	CVector(int size, T data);
+
+	CVector(int size)
+	{
+
+	}
+
+	CVector(int size, T data)
+	{
+
+	}
+
 	~CVector();
 public:
-	int size();
-	void resize(int size);
-	int capacity();
-	void clear();
-	void reserve(int size);
-	void push_back(T data);
-	T operator()(int num);
-	ostream operator<<(ostream& os, )
+	int size() 
+	{
+		return m_size;
+	}
+
+	void resize(int size)
+	{
+		if(m_capacity<)
+		m_size = size;
+	}
+
+	int capacity()
+	{
+		return m_capacity;
+	}
+
+	void clear()
+	{
+
+	}
+
+	void reserve(int size)
+	{
+
+	}
+
+	void push_back(T data)
+	{
+
+	}
+
+	T operator()(int num)
+	{
+		return m_data[num];
+	}
+
+	ostream& operator<<(ostream& os, const CVector& vec, int num)
+	{
+		os << vec.m_data[num];
+		return os;
+	}
 private:
 	int m_size;
 	int m_capacity;
-	T m_data[m_size];
+	T m_data[];
 };
 
 /*
