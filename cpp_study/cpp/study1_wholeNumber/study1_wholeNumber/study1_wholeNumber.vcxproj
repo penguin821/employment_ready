@@ -137,6 +137,7 @@
     </ClCompile>
     <ClCompile Include="cusrtom_vector.cpp" />
     <ClCompile Include="CVector.cpp" />
+    <ClCompile Include="deque.cpp" />
     <ClCompile Include="Dog.cpp" />
     <ClCompile Include="functor_template.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
