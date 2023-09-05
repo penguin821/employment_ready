@@ -1,6 +1,11 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(study1_wholeNumber.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(study1_wholeNumber.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  cusrtom_vector.cpp
+D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(63,4): warning C4200: 비표준 확장이 사용됨: 구조체/공용 구조체의 배열 크기가 0입니다.
+D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(63,4): message : 이 멤버는 기본값으로 설정된 생성자 또는 복사/이동 대입 연산자에서 무시됩니다.
+D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(31,15): message : 컴파일되는 클래스 템플릿 인스턴스화 'CVector<int>'에 대한 참조를 확인하세요.
+D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(46,39): error C2039: 'begin': 'CVector<int>'의 멤버가 아닙니다.
+D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(31,2): message : 'CVector<int>' 선언을 참조하십시오.
+D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(46,59): error C2039: 'end': 'CVector<int>'의 멤버가 아닙니다.
+D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(31,2): message : 'CVector<int>' 선언을 참조하십시오.
   CVector.cpp
-D:\GitHub\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(60,1): error C2804: 이항 'operator <<'에 매개 변수가 너무 많습니다.
-D:\GitHub\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(68): message : 컴파일되는 클래스 템플릿 인스턴스화 'CVector<T>'에 대한 참조를 확인하세요.
-D:\GitHub\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(60,1): error C2333: 'CVector<T>::operator <<': 함수 선언에 오류가 있습니다. 함수 본문을 건너뜁니다.
-D:\GitHub\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(30,17): error C2760: 구문 오류: ')'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '식'입니다.
+  코드를 생성하고 있습니다...

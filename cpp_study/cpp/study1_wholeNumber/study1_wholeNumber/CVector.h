@@ -27,7 +27,8 @@ public:
 
 	void resize(int size)
 	{
-		if(m_capacity<)
+		if (m_capacity < size)
+			m_capacity = size;
 		m_size = size;
 	}
 
@@ -51,16 +52,11 @@ public:
 
 	}
 
-	T operator()(int num)
+	T operator[](int num)
 	{
 		return m_data[num];
 	}
 
-	ostream& operator<<(ostream& os, const CVector& vec, int num)
-	{
-		os << vec.m_data[num];
-		return os;
-	}
 private:
 	int m_size;
 	int m_capacity;
