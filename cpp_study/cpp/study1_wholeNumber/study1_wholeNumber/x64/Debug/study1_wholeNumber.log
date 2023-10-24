@@ -1,11 +1,24 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(study1_wholeNumber.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  BullDog.cpp
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\Knight.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   cusrtom_vector.cpp
-D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(63,4): warning C4200: 비표준 확장이 사용됨: 구조체/공용 구조체의 배열 크기가 0입니다.
-D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(63,4): message : 이 멤버는 기본값으로 설정된 생성자 또는 복사/이동 대입 연산자에서 무시됩니다.
-D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(31,15): message : 컴파일되는 클래스 템플릿 인스턴스화 'CVector<int>'에 대한 참조를 확인하세요.
-D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(46,39): error C2039: 'begin': 'CVector<int>'의 멤버가 아닙니다.
-D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(31,2): message : 'CVector<int>' 선언을 참조하십시오.
-D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(46,59): error C2039: 'end': 'CVector<int>'의 멤버가 아닙니다.
-D:\heno\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(31,2): message : 'CVector<int>' 선언을 참조하십시오.
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(70,4): warning C4200: 비표준 확장이 사용됨: 구조체/공용 구조체의 배열 크기가 0입니다.
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\CVector.h(70,4): message : 이 멤버는 기본값으로 설정된 생성자 또는 복사/이동 대입 연산자에서 무시됩니다.
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\cusrtom_vector.cpp(31,15): message : 컴파일되는 클래스 템플릿 인스턴스화 'CVector<int>'에 대한 참조를 확인하세요.
   CVector.cpp
+  Dog.cpp
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\Dog.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\Knight.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  Gacha.cpp
+  Item.cpp
+  Knight.cpp
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\Knight.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  Object.cpp
+  Pet.cpp
+  Player.cpp
+  Position.cpp
   코드를 생성하고 있습니다...
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\study1_wholeNumber\Dog.cpp(23): warning C4717: 'Dog::operator Knight': 모든 제어 경로에서 재귀적입니다. 함수로 인해 런타임 스택 오버플로가 발생합니다.
+cusrtom_vector.obj : error LNK2019: "public: __cdecl CVector<int>::CVector<int>(void)" (??0?$CVector@H@@QEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+cusrtom_vector.obj : error LNK2019: "public: __cdecl CVector<int>::~CVector<int>(void)" (??1?$CVector@H@@QEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Github\employment_ready\cpp_study\cpp\study1_wholeNumber\x64\Debug\cpp_study_employment.exe : fatal error LNK1120: 2개의 확인할 수 없는 외부 참조입니다.

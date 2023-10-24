@@ -6,16 +6,23 @@ template <typename T>
 class CVector
 {
 public:
-	CVector();
+	CVector()
+	{
+		m_size = 0;
+		m_capacity = 0;
+	}
 
 	CVector(int size)
 	{
-
+		m_size = size;
+		m_capacity = size;
 	}
 
 	CVector(int size, T data)
 	{
-
+		m_size = size;
+		m_capacity = size;
+		T m_data = new T;
 	}
 
 	~CVector();
@@ -25,21 +32,9 @@ public:
 		return m_size;
 	}
 
-	void resize(int size)
-	{
-		if (m_capacity < size)
-			m_capacity = size;
-		m_size = size;
-	}
-
 	int capacity()
 	{
 		return m_capacity;
-	}
-
-	void clear()
-	{
-
 	}
 
 	void reserve(int size)
@@ -49,12 +44,40 @@ public:
 
 	void push_back(T data)
 	{
+		if (m_capacity < m_size)
+		if (m_size < 1)
+		{
 
+		}
 	}
 
 	T operator[](int num)
 	{
 		return m_data[num];
+	}
+
+	T begin()
+	{
+
+	}
+
+	T end()
+	{
+
+	}
+
+	class iterator
+	{
+
+	private:
+		T* node;
+	};
+
+	CVector operator=(const CVector& copy)
+	{
+		m_pos = copy.m_pos;
+		m_pet = new Pet(*copy.m_pet);
+		return *this;
 	}
 
 private:
@@ -64,6 +87,7 @@ private:
 };
 
 /*
+	CVector v;
 	for (int i = 0; i < 100; i++)
 	{
 		v.push_back(i);
@@ -74,7 +98,7 @@ private:
 	{
 		cout << v[i] << endl;
 	}
-	for (vector<int>::iterator iter = v.begin(); iter != v.end(); ++iter)
+	for (CVector<int>::iterator iter = v.begin(); iter != v.end(); ++iter)
 	{
 		cout << (*iter) << endl;
 	}

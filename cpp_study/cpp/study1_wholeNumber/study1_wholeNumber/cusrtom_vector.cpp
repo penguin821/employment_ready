@@ -11,7 +11,8 @@ int main()
 	for (int i = 0; i < 100; i++)
 	{
 		v.push_back(i);
-		cout << "size : " << v.size() << ", " << "capacity : " << v.capacity() << endl;
+		cout << "size : " << v.size() << ", " << "capacity : "
+			<< v.capacity() << endl;
 	}
 
 	for (int i = 0; i < v.size(); i++)
@@ -33,20 +34,20 @@ int main()
 	for (int i = 0; i < 100; i++)
 	{
 		cv.push_back(i);
-		cout << "size : " << cv.size() << ", " << "capacity : " << v.capacity() << endl;
+		cout << "size : " << cv.size() << ", " << "capacity : "
+			<< cv.capacity() << endl;
 	}
 
-	for (int i = 0; i < v.size(); i++)
+	for (int i = 0; i < cv.size(); i++)
 	{
 		cout << cv[i] << endl;
 	}
 
 	cout << "-------------------" << endl;
 
-	for (vector<int>::iterator iter = cv.begin(); iter != cv.end(); ++iter)
-	{
-		cout << (*iter) << endl;
-	}
-
+	//for (CVector<int>::iterator iter = cv.begin(); iter != cv.end(); ++iter)
+	//{
+	//	cout << (*iter) << endl;
+	//}
 	return 0;
 }
