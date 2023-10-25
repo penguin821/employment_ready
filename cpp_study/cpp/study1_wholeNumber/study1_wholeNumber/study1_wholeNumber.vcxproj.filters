@@ -96,6 +96,9 @@
     <ClCompile Include="deque.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Object.h">

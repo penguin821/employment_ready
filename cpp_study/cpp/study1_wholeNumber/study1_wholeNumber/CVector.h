@@ -73,12 +73,12 @@ public:
 		T* node;
 	};
 
-	CVector operator=(const CVector& copy)
-	{
-		m_pos = copy.m_pos;
-		m_pet = new Pet(*copy.m_pet);
-		return *this;
-	}
+	//CVector operator=(const CVector& copy)
+	//{
+	//	m_pos = copy.m_pos;
+	//	m_pet = new Pet(*copy.m_pet);
+	//	return *this;
+	//}
 
 private:
 	int m_size;
