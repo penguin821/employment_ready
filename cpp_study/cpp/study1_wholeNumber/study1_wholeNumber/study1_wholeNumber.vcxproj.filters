@@ -102,7 +102,10 @@
     <ClCompile Include="set_multi.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
-    <ClCompile Include="vector_practice.cpp">
+    <ClCompile Include="vec_algorithm.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
+    <ClCompile Include="modern_cpp11.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
   </ItemGroup>
