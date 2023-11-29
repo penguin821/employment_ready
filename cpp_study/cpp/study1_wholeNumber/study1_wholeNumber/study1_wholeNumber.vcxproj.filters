@@ -105,7 +105,10 @@
     <ClCompile Include="vec_algorithm.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
-    <ClCompile Include="modern_cpp11.cpp">
+    <ClCompile Include="auto_using_init.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
+    <ClCompile Include="using_enumclass.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
   </ItemGroup>
