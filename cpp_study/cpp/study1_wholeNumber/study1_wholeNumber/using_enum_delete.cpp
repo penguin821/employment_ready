@@ -34,6 +34,22 @@ enum class OBtype
 	Pro
 };
 
+// delete
+class Knight
+{
+private:
+	void operator=(const Knight& k)
+	{
+
+	} // 이렇게 선언하고 내용을 안채우는 식으로 외부에서 선언을 막을 수 있다
+	// friend class 클래스명 <- 이렇게 선언하면 private 임에도
+	// 해당 클래스에서 선언하고 쓸 수 있게 열어준다
+public:
+	void operator=(const Knight& k) = delete;
+	// 이렇게 선언해주면 해당 함수 및 기능을 못쓰게 확실하게 막을 수 있음
+
+};
+
 
 int main()
 {
@@ -57,3 +73,4 @@ int main()
 	// double val1 = player; 정의되어 있지 않다고 뜸
 	double val2 = static_cast<double>(OBtype::player);
 }
+
