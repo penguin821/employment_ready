@@ -111,6 +111,9 @@
     <ClCompile Include="using_enum_delete.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
+    <ClCompile Include="override_final.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Object.h">
