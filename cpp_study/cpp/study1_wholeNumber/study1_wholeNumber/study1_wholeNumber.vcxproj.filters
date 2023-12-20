@@ -117,6 +117,9 @@
     <ClCompile Include="Rvalue.cpp">
       <Filter>소스 파일\00. Study</Filter>
     </ClCompile>
+    <ClCompile Include="전달참조.cpp">
+      <Filter>소스 파일\00. Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Object.h">
