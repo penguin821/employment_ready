@@ -7,12 +7,27 @@
     <Filter Include="Utility">
       <UniqueIdentifier>{fb5c8982-268b-49cb-8450-44d307e0b6c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Study">
+      <UniqueIdentifier>{18dd0bd7-9f5a-4dbc-b5d6-af9c8cb1c258}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Server.cpp">
       <Filter>Main</Filter>
     </ClCompile>
     <ClCompile Include="PCH.cpp" />
+    <ClCompile Include="MultiThread_Basic.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Atomic.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Lock.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadLock.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PCH.h" />
