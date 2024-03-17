@@ -28,8 +28,20 @@
     <ClCompile Include="DeadLock.cpp">
       <Filter>Study</Filter>
     </ClCompile>
+    <ClCompile Include="Study_AccountManager.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="Study_UserManager.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PCH.h" />
+    <ClInclude Include="Study_AccountManager.h">
+      <Filter>Study</Filter>
+    </ClInclude>
+    <ClInclude Include="Study_UserManager.h">
+      <Filter>Study</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
