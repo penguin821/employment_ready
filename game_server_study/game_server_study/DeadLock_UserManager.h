@@ -5,13 +5,13 @@ class User
 	// todo
 };
 
-class Study_UserManager
+class DeadLock_UserManager
 {
 public:
 	// ΩÃ±€≈Ê
-	static Study_UserManager* Instance()
+	static DeadLock_UserManager* Instance()
 	{
-		static Study_UserManager instance;
+		static DeadLock_UserManager instance;
 		return &instance;
 	}
 

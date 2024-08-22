@@ -7,13 +7,13 @@ class Account
 	//todo
 };
 
-class Study_AccountManager
+class DeadLock_AccountManager
 {
 public: 
 	// 싱글톤
-	static Study_AccountManager* Instance()
+	static DeadLock_AccountManager* Instance()
 	{
-		static Study_AccountManager instance;
+		static DeadLock_AccountManager instance;
 		return &instance;
 	}
 
@@ -24,7 +24,7 @@ public:
 		return nullptr;
 	}
 
-	void ProcessLogin();
+	void ProcessLogin(); // 로그인 하는 코드들
 private:
 	mutex m_mutex;
 	//map<int32,Account*> m_accounts;

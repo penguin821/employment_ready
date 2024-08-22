@@ -5,7 +5,7 @@
 #include <mutex>
 
 vector <int32> v;
-// 아토믹은 일반적인 데이터형에서나 잘 작동하지
+// 아토믹은 일반적인 데이터형에서 잘 작동하지만
 // atomic<vector <int32>> v 이런식으로 쓰면 제대로 작동 안함
 mutex m;
 

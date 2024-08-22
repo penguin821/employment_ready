@@ -25,22 +25,31 @@
     <ClCompile Include="Lock.cpp">
       <Filter>Study</Filter>
     </ClCompile>
-    <ClCompile Include="DeadLock.cpp">
+    <ClCompile Include="DeadLock_AccountManager.cpp">
       <Filter>Study</Filter>
     </ClCompile>
-    <ClCompile Include="Study_AccountManager.cpp">
+    <ClCompile Include="DeadLock_UserManager.cpp">
       <Filter>Study</Filter>
     </ClCompile>
-    <ClCompile Include="Study_UserManager.cpp">
+    <ClCompile Include="Event.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="ConditionVariable.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinLock.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadLock_Server.cpp">
       <Filter>Study</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PCH.h" />
-    <ClInclude Include="Study_AccountManager.h">
+    <ClInclude Include="DeadLock_AccountManager.h">
       <Filter>Study</Filter>
     </ClInclude>
-    <ClInclude Include="Study_UserManager.h">
+    <ClInclude Include="DeadLock_UserManager.h">
       <Filter>Study</Filter>
     </ClInclude>
   </ItemGroup>
