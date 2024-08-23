@@ -4,12 +4,42 @@
 #include <thread>
 #include <atomic>
 #include <mutex>
-
-class SpinLock
+// 면접에 자주 나오는 스핀락
+class SpinLock // 락을 획득할때까지 계속 확인하면서 기다림
 {
 public:
 	void lock() // 소문자 = lock_guard 내부 자체에 소문자 lock() unlock()과 연동
 	{
+		// CAS (Compare And Swap)
+
+		bool expected = false; // CAS 하기 이전의 값
+		bool desired = true; // CAS로 바뀌길 원하는 값
+
+		/*CAS 작동방식 슈도코드
+		if (m_isLock == expected)
+		{
+			expected = m_isLock;
+			m_isLock = desired;
+			return true;
+		}
+		else
+		{
+			expected = m_isLock;
+			return false;
+		}*/
+
+		while (m_isLock.compare_exchange_strong(expected, desired) == false)
+		{
+			// ()안의 값이 false가 나오면 잠그는걸 실패했다는 뜻이니
+			// 잠길때까지 이 안의 반복문을 타고, desired가 트루니 m_isLock도 트루가 됨
+			// 즉 아래의 while (m_isLock) {} m_isLock = true; 동작을 한번에 한다.
+
+			expected = false; // 주의! c_e_s가 첫번째 인자는 레퍼런스로 받아서 
+			// 매번 바뀌기 때문에 끝나기 전에 다시 처음 값으로 바꿔줘야함
+		}
+
+		///////////////////////////////////////////////////////////////////////////////////
+
 		while (m_isLock)
 		{
 
@@ -23,12 +53,14 @@ public:
 
 	void unlock()
 	{
-		m_isLock = false;
+		//m_isLock = false; 상관 없지만 아토믹인지 그냥 변수인지 헷갈리니 아래처럼
+		m_isLock.store(false);
 	}
 
 private:
 	//bool m_isLock = false;
-	volatile bool m_isLock = false; // 마음대로 최적화 하지 말아라
+	//volatile bool m_isLock = false; // 마음대로 최적화 하지 말아라
+	atomic<bool> m_isLock = false;
 	/*
 	a=1
 	a=2
