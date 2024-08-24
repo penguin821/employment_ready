@@ -36,6 +36,11 @@ public:
 
 			expected = false; // 주의! c_e_s가 첫번째 인자는 레퍼런스로 받아서 
 			// 매번 바뀌기 때문에 끝나기 전에 다시 처음 값으로 바꿔줘야함
+
+			//this_thread::sleep_for(std::chrono::milliseconds(100));
+			this_thread::sleep_for(100ms); // 100ms 동안 준비 큐에 안들어가게 블락 됨
+			this_thread::yield(); // this_thread::sleep_for(0ms) 이거랑 같음
+			//자신이 받은 타임슬라이스를 쿨하게 양보하고 커널모드로 돌아가 다시 스케쥴링 해라
 		}
 
 		///////////////////////////////////////////////////////////////////////////////////

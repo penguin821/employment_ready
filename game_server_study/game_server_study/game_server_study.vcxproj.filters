@@ -37,7 +37,7 @@
     <ClCompile Include="ConditionVariable.cpp">
       <Filter>Study</Filter>
     </ClCompile>
-    <ClCompile Include="SpinLock.cpp">
+    <ClCompile Include="SpinLock_Sleep.cpp">
       <Filter>Study</Filter>
     </ClCompile>
     <ClCompile Include="DeadLock_Server.cpp">
