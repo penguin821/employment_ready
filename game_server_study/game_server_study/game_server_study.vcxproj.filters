@@ -43,6 +43,9 @@
     <ClCompile Include="DeadLock_Server.cpp">
       <Filter>Study</Filter>
     </ClCompile>
+    <ClCompile Include="Con_Var.cpp">
+      <Filter>Study</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PCH.h" />
