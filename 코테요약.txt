@@ -1,0 +1,7 @@
+재귀
+순열 - next_permutation 함수
+조합 - combination 함수
+문자열 나누기 - split 함수 제작
+중복요소 없애기 - sort 이후 erase (unique , end) , 또는 map+vector
+누적/구간합 - 정적배열 = pSum / 동적배열 = 펜익트리
+구현 - 말그대로 회전하라=rotate함수, 정렬하라=sort함수 원하는게 뭔지 잘 파악하고 시키는대로
