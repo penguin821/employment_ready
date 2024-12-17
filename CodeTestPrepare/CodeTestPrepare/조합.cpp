@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int n = 5, k = 3, a[5] = { 1, 2, 3, 4, 5 };
+int n = 5, k = 3, a[5] = { 3, 2, 1, 5, 4 };
 
 void print(vector<int> b) 
 {
@@ -35,7 +35,7 @@ int main()
 }
 
 //=======================================================================
-
+/*
 int n = 5;
 int k = 3;
 int a[5] = { 1, 2, 3, 4, 5 };
@@ -49,3 +49,4 @@ int main() {
 	}
 	return 0;
 }
+*/
